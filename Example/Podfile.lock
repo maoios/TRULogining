@@ -1,0 +1,33 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - TRULogining (0.1.0):
+    - TRUNetworking
+  - TRUNetworking (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - TRULogining (from `../`)
+  - TRUNetworking (from `../../TRUNetworking`)
+
+SPEC REPOS:
+  trunk:
+    - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  TRULogining:
+    :path: "../"
+  TRUNetworking:
+    :path: "../../TRUNetworking"
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  TRULogining: 3e0c187003f4e85ee3bc05d7182a3304e59c902d
+  TRUNetworking: 4b3519c64eec66ed803d00f32ebe18a52a66d095
+
+PODFILE CHECKSUM: 521c0f18367dbf3539b36390ae5079b18bd6b5a7
+
+COCOAPODS: 1.8.4

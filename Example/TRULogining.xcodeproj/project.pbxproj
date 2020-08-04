@@ -37,10 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		135664B20B76FB5D2C6B435E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		135664B20B76FB5D2C6B435E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		1CF5FF973EBB7449189E88C4 /* Pods_TRULogining_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TRULogining_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DC0A797D18ECB48B5A09B83 /* Pods-TRULogining_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRULogining_Tests.release.xcconfig"; path = "Target Support Files/Pods-TRULogining_Tests/Pods-TRULogining_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		5A49283A40985357F500AAA3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		5A49283A40985357F500AAA3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		5D3ADACA7B30DF1D20F4400B /* Pods_TRULogining_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TRULogining_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* TRULogining_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRULogining_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -66,7 +66,7 @@
 		8925CEA397CF42CFE4950A95 /* Pods-TRULogining_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRULogining_Example.debug.xcconfig"; path = "Target Support Files/Pods-TRULogining_Example/Pods-TRULogining_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		CC349316F70118B2B8C5C883 /* Pods-TRULogining_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRULogining_Tests.debug.xcconfig"; path = "Target Support Files/Pods-TRULogining_Tests/Pods-TRULogining_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		D77E0B40B93AC399B1849490 /* Pods-TRULogining_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRULogining_Example.release.xcconfig"; path = "Target Support Files/Pods-TRULogining_Example/Pods-TRULogining_Example.release.xcconfig"; sourceTree = "<group>"; };
-		F511599E47D53162489ED715 /* TRULogining.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = TRULogining.podspec; path = ../TRULogining.podspec; sourceTree = "<group>"; };
+		F511599E47D53162489ED715 /* TRULogining.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TRULogining.podspec; path = ../TRULogining.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +103,6 @@
 				CC349316F70118B2B8C5C883 /* Pods-TRULogining_Tests.debug.xcconfig */,
 				2DC0A797D18ECB48B5A09B83 /* Pods-TRULogining_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -259,6 +258,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -344,10 +344,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TRULogining_Example/Pods-TRULogining_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/TRULogining/TRULogining.framework",
+				"${BUILT_PRODUCTS_DIR}/TRUNetworking/TRUNetworking.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TRULogining.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TRUNetworking.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
